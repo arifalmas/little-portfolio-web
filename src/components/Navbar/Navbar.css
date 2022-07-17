@@ -1,0 +1,83 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+  padding: 0 5rem;
+}
+
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+
+  flex: 10;
+}
+
+.n-list>ul {
+  display: flex;
+  gap: 4rem;
+  margin-right: 4rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 3px 0;
+  position: relative;
+  top: 0;
+  border-bottom: 1px solid transparent;
+  color: orange;
+}
+
+.n-list>ul :hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.n-button {
+  flex: 2;
+}
+.hire_me_button{
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 14px 5px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px -2px 12px 35px;
+}
+.hire_me_button:hover{
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+    margin: 0 ;
+    padding: 0  ;
+  }
+  .n-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+}
